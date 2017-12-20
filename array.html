@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+        <script src="./js/vue.js"></script>
+        <link rel="stylesheet" href="./css/vue.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <div>{{names[0]}}</div>
+            <div>{{names[1]}}</div>
+            <div>{{names[2]}}</div>
+            <div>{{names[3]}}</div>
+            <div>{{names[4]}}</div>
+            <div>{{names}}</div>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    names: ['Muhtar', 'Ali', 'Jono', 'Jini', 'Juni']
+                }
+            })
+        </script>
+    </body>
+</html>
