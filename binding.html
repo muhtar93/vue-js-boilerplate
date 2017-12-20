@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Binding</title>
+        <script src="./js/vue.js"></script>
+        <link rel="stylesheet" href="./css/vue.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <div v-bind:title="myNumber">Test hover me please!</div>
+            <div>{{myNumber}}</div>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    myNumber: 69
+                }
+            })
+        </script>
+    </body>
+</html>
