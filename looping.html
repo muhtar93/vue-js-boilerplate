@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Looping</title>
+        <script src="./js/vue.js"></script>
+        <link rel="stylesheet" href="./css/vue.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <ul>
+                <li v-for="android in androids">{{android}}</li>
+            </ul>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    androids: ['Jelly Bean', 'Kitkat', 'Oreo', 'Nougat', 'Donut']
+                }
+            })
+        </script>
+    </body>
+</html>
